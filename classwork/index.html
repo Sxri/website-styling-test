@@ -7,7 +7,20 @@
   
   
   <body>
-
+		<header class="navbar">
+  <div class="containerz">
+    <a href="#" class="logo">AnchorX</a>
+    <nav>
+      <ul>
+        <li><a href="/website-styling-test/index.html">Home</a></li>
+        <li><a href="/website-styling-test/classwork">Games</a></li>
+        <li><a href="/website-styling-test/canvas">Proxies</a></li>
+        <li><a href="/website-styling-test/feedback">About</a></li>
+	<li><a href="/website-styling-test/loading">Discord</a></li>
+      </ul>
+    </nav>
+  </div>
+	  </header>
 	  
 	  <content>
 	    <h1>AnchorX</h1>
@@ -15,7 +28,54 @@
 
       <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-    
+  
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  z-index: 999;
+  transition: background 0.5s ease-in-out;
+}
+
+.navbar.sticky {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+}
+
+.containerz {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-left: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #6900d1;
+}	      
   
     body {
       background-color: #0d0d0d;  
