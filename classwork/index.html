@@ -1,40 +1,31 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-	<head>
-	<title>Classwork</title>
-	</head>
-	
-	<body>
-	<header class="navbar">
-  	<div class="containerz">
-   <a href="#" class="logo">AnchorX</a>
-     <nav>
-       <ul>
+  <head>
+    <title>AnchorX | V2</title>
+  </head>
+ 
+  
+  
+  <body>
+		<header class="navbar">
+  <div class="containerz">
+    <a href="#" class="logo">AnchorX</a>
+    <nav>
+      <ul>
         <li><a href="/website-styling-test/index.html">Home</a></li>
-       	<li><a href="/website-styling-test/classwork">Games</a></li>
-      	<li><a href="/website-styling-test/canvas">Proxies</a></li>
-     	<li><a href="/website-styling-test/feedback">About</a></li>
+        <li><a href="/website-styling-test/classwork">Games</a></li>
+        <li><a href="/website-styling-test/canvas">Proxies</a></li>
+        <li><a href="/website-styling-test/feedback">About</a></li>
 	<li><a href="/website-styling-test/loading">Discord</a></li>
       </ul>
     </nav>
   </div>
-</header>
-		
-	 <div class="content">
-            <h1>Games</h1>
-        </div>
-		
-	<!-- The Start Of The Game Tiles -->
-	
-<a href="https://roblox.com">
-  <div class="card">
-    <div class="card-image">
-      <img src="https://www.esafety.gov.au/sites/default/files/2019-09/roblox_0.png">
-    </div>
-    <h2 class="card-title">Roblox</h2>
-  </div>
-</a>
-<a href="https://fortnite.com">
+	  </header>
+	  
+	  <content>
+	    <h1>AnchorX</h1>
+		  
+	    <a href="https://fortnite.com">
   <div class="card">
     <div class="card-image">
       <img src="https://imgs2.dab3games.com/basketball-stars-game.png">
@@ -42,47 +33,12 @@
     <h2 class="card-title">Basketball Stars</h2>
   </div>
 </a>
-		<style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-		
-			
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins';
-    text-decoration: none;
-    display: grid;
-}
-	
-			
-.containerz {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-}
-			
-			
-body {
-    background-color: #0f0f0f;
-}
-			
-h1{
-    text-align: center;
-    padding-top: 100px;
-    font-size: 95px;
-    color: #fff;
-    margin-bottom: 50px;
-    transition: 0.3s;
-}
-	      
-h1:hover{
-    font-size: 95px;
-    color: #6900d1;
-    margin-bottom: 50px;
-}
-			
+	  </content>
+
+      <style>
+
+	          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 .navbar {
   position: fixed;
   top: 0;
@@ -95,13 +51,17 @@ h1:hover{
 .navbar.sticky {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
 }
-
+.containerz {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
 .logo {
   font-size: 1.5rem;
   color: #fff;
   text-decoration: none;
 }
-
 nav ul {
   list-style: none;
   display: flex;
@@ -118,8 +78,35 @@ nav a {
 }
 nav a:hover {
   color: #6900d1;
+}	      
+  
+    body {
+      background-color: #0d0d0d;  
+    }
+* {
+    font-family: 'Poppins';
+    padding: 0;
+    margin: 0;
+    display: grid;
 }
-			
+
+content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+	    
+h1 {
+    font-size: 95px;
+    color: #fff;
+    transition: 0.3s;
+}
+	      
+h1:hover {
+    font-size: 95px;
+    color: #6900d1;
+}
+	      
 .card {
   position: relative;
   width: 200px;
@@ -129,36 +116,7 @@ nav a:hover {
   transition: transform 0.3s ease-in-out;
   background-color: #8bc34a;
 }
-	
-.content{
-    text-align: center;
-}
-.content h1{
-    font-size: 95px;
-    color: #fff;
-    margin-bottom: 50px;
-    transition: 0.3s;
-}
 	      
-.content h1:hover{
-    font-size: 95px;
-    color: #6900d1;
-    margin-bottom: 50px;
-}
-.content a{
-    font-size: 23px;
-    color: #fff;
-    text-decoration: none;
-    border: 2px solid #fff;
-    padding: 15px 25px;
-    border-radius: 10px;
-    transition: 0.3s;
-}
-.content a:hover{
-    background-color: #fff;
-    color: #000;
-}
-			
 .card:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   transform: scale(1.1);
@@ -197,6 +155,11 @@ nav a:hover {
   transition: transform 0.3s ease-in-out;
   text-decoration: none;
 }
-		</style>
-	</body>
+	
+  </style>
+  </body>
+  
+  
+  
+  
 </html>
